@@ -6,6 +6,9 @@
 /**
  *
  * @author katta
+   Time Complexity
+   Best Case : O(nlogn)
+   Wort Case : O(nlogn)
  */
 public class MergeSort {
 
