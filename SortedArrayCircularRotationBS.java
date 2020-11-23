@@ -30,8 +30,13 @@ class SortedArrayCircularRotationBS {
         int low = 0;
         int mid = 0;
         int n = array.length;
-        while (low <= high) {
+        int i=0;
+        while (low <=high) {
             mid = (low + high) / 2;
+            if (high ==0 && low ==0  && key!=array[mid])
+            break;
+            System.out.println("low value count: " + low+ ":: high value count: " + high);
+            System.out.println("mid value count: " + mid);
             
             if ( key == array[mid])
             {
@@ -43,6 +48,7 @@ class SortedArrayCircularRotationBS {
              {
              if (key>=array[mid] && key<=array[high])
                low = mid+1;
+               
               else 
               high = mid-1;
                 
@@ -54,8 +60,15 @@ class SortedArrayCircularRotationBS {
                else
                 low = mid + 1;
             } 
-            
+            i++;
+            try{
+
+        Thread.sleep(1000);
         }
+        catch(InterruptedException ex){
+        ex.printStackTrace();
+       }
+     }
         if (result == -1)
          System.out.println("Number not found in circlar sorted array");
         else
