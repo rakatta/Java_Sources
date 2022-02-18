@@ -20,7 +20,7 @@ public class BS
         int array[] = {2, 5 , 7,10, 13, 16,18, 19, 20};
 
         int high = array.length - 1;
-        for ( int i=0;i<high;i++)
+        for ( int i=0;i<=high;i++)
         System.out.println(array[i]+ " index "+ i);
         System.out.println("Enter the input"); 
         Scanner obj = new Scanner(System.in);
