@@ -5,7 +5,7 @@
 
 /**
  *
- * @author katta
+ * @author katta 
  */
 //  ********  This will work only on sorted array  **********.
 import java.util.*;
